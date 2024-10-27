@@ -27,6 +27,7 @@ connectNow('mongodb://localhost:27017/url-shortener')
 
 app.set('view engine', 'ejs');
 app.set('views', path.resolve('./views'));
+app.use(express.static(path.resolve('./public')));
 
 //api routes
 app.use('/url', restrictToLoggedinUsersOnly, urlRoute);
