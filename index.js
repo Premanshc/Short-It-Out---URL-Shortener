@@ -21,7 +21,7 @@ app.use(express.urlencoded({extended: true}));
 app.use(cookieParser());
 
 //connect to database
-connectNow('mongodb://localhost:27017/url-shortener')
+connectNow('mongodb+srv://premanshacademics:V1O8z7TehPR4psns@cluster0.80vjk.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0')
 .then(()=>console.log('Connected to database'))
 .catch((err)=>console.log(err));
 
